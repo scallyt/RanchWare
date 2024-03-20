@@ -1,0 +1,100 @@
+/* Style for form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form labels */
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style for form inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for form submit button */
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for error messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Style for link */
+.form-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Style for link on hover */
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333; /* Background color */
+    padding: 10px 20px; /* Padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff; /* Text color */
+    font-size: 24px; /* Font size */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar .nav-links {
+    list-style-type: none; /* Remove list style */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline-block; /* Display horizontally */
+    margin-left: 20px; /* Spacing between links */
+}
+
+.navbar .nav-links li:first-child {
+    margin-left: 0; /* Remove left margin for the first link */
+}
+
+.navbar .nav-links li a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+}
+
+.navbar .nav-links li a:hover {
+    color: #ddd; /* Text color on hover */
+}
