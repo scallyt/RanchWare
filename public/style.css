@@ -1,21 +1,68 @@
-/* Style for form container */
-.form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Navbar styles */
+.navbar {
+    background-color: #333; /* Háttérszín */
+    padding: 10px 20px; /* Töltés */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Egyszerű árnyék a finom emelés érdekében */
 }
 
-/* Style for form labels */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff; /* Szövegszín */
+    font-size: 30px; /* Betűméret */
+    font-weight: bold; /* Félkövér */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+}
+
+.navbar .nav-links {
+    list-style-type: none; /* Lista stílus eltávolítása */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline-block; /* Vízszintes elrendezés */
+    margin-left: 20px; /* Távolság a linkek között */
+}
+
+.navbar .nav-links li:first-child {
+    margin-left: 0; /* Első link bal margó eltávolítása */
+}
+
+.navbar .nav-links li a {
+    color: #fff; /* Szövegszín */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    font-size: 16px; /* Betűméret */
+}
+
+.navbar .nav-links li a:hover {
+    color: #ddd; /* Szövegszín egér fölött */
+}
+
+/* Form konténer stílus */
+.form-container {
+    max-width: 400px; /* Maximális szélesség */
+    margin: 0 auto; /* Középre igazítás */
+    padding: 20px; /* Töltés */
+    border: 1px solid #ccc; /* Keret */
+    border-radius: 5px; /* Border sugár */
+    background-color: #f9f9f9; /* Háttérszín */
+}
+
+/* Form címkék stílusa */
 .form-container label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* Style for form inputs */
+/* Form inputok stílusa */
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container input[type="password"] {
@@ -26,7 +73,7 @@
     border-radius: 5px;
 }
 
-/* Style for form submit button */
+/* Form elküldés gomb stílusa */
 .form-container button[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -37,29 +84,35 @@
     cursor: pointer;
 }
 
-/* Style for error messages */
+/* Hibajelzések stílusa */
 .error-message {
     color: red;
     font-size: 14px;
     margin-top: 5px;
 }
 
-/* Style for link */
+/* Link stílusa */
 .form-container a {
     color: #007bff;
     text-decoration: none;
 }
 
-/* Style for link on hover */
+/* Link hover stílusa */
 .form-container a:hover {
     text-decoration: underline;
 }
 
+.navbar a {
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+}
+
 /* Navbar styles */
 .navbar {
-    background-color: #333; /* Background color */
-    padding: 10px 20px; /* Padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation */
+    background-color: #333; /* Háttérszín */
+    padding: 10px 20px; /* Töltés */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Egyszerű árnyék a finom emelés érdekében */
 }
 
 .navbar .container {
@@ -69,32 +122,53 @@
 }
 
 .navbar .logo {
-    color: #fff; /* Text color */
-    font-size: 24px; /* Font size */
-    text-decoration: none; /* Remove underline */
+    color: #fff; /* Szövegszín */
+    font-size: 30px; /* Betűméret */
+    font-weight: bold; /* Félkövér */
+    text-decoration: none; /* Aláhúzás eltávolítása */
 }
 
 .navbar .nav-links {
-    list-style-type: none; /* Remove list style */
+    list-style-type: none; /* Lista stílus eltávolítása */
     margin: 0;
     padding: 0;
 }
 
 .navbar .nav-links li {
-    display: inline-block; /* Display horizontally */
-    margin-left: 20px; /* Spacing between links */
+    display: inline-block; /* Vízszintes elrendezés */
+    margin-left: 20px; /* Távolság a linkek között */
 }
 
 .navbar .nav-links li:first-child {
-    margin-left: 0; /* Remove left margin for the first link */
+    margin-left: 0; /* Első link bal margó eltávolítása */
 }
 
 .navbar .nav-links li a {
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size */
+    color: #fff; /* Szövegszín */
+    text-decoration: none; /* Aláhúzás eltávolítása */
+    font-size: 16px; /* Betűméret */
 }
 
 .navbar .nav-links li a:hover {
-    color: #ddd; /* Text color on hover */
+    color: #ddd; /* Szövegszín egér fölött */
 }
+
+/* Logout gomb stílusa */
+.navbar .nav-links li form {
+    margin-left: 20px; /* Távolság a többi linktől */
+}
+
+.navbar .nav-links li form button {
+    color: #fff; /* Szövegszín */
+    background-color: #dc3545; /* Gomb háttérszín */
+    border: none; /* Keret eltávolítása */
+    border-radius: 5px; /* Border sugár */
+    padding: 0.6rem 1rem; /* Töltés */
+    cursor: pointer; /* Mutató */
+    font-size: 1rem;
+}
+
+.navbar .nav-links li form button:hover {
+    background-color: #bd2130; /* Gomb háttérszín egér fölött */
+}
+

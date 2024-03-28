@@ -1,0 +1,21 @@
+.side-navbar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 4.3rem;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    font-size: 1.5rem;
+}
+
+.withborder {
+    border: solid;
+    border-radius: 5px;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+
+    text-align: center;
+}

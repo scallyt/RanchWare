@@ -40,7 +40,7 @@
         </form>
 
         <div class="mt-3">
-            <p>Already have an account? <a href="/Login" class="login-link">Login</a></p>
+            <p>Already have an account? <a href="/login" class="login-link">Login</a></p>
         </div>
     </div>
 </x-layout>
